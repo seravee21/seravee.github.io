@@ -12,15 +12,17 @@
 
     <!-- Core -->
     <!-- for development -->
-    <link rel="stylesheet" href="/dist/css/core.css" /> 
+    <!-- <link rel="stylesheet" href="/dist/css/core.css" />  -->
+    <link rel="stylesheet" href="../css/core.css" />
     <!-- for production -->
-    <link rel="stylesheet" href="../css/core.min.css" />
+    <!-- <link rel="stylesheet" href="../css/core.min.css" /> -->
   </head>
   <body>
     <!-- blur -->
     <!-- <div id="blur"></div> -->
     <!-- end blur -->
     <div class="sidebar" id="sidebar">
+		<div class="sidebar-wrap" id="sidebar-wrap">
 			<div class="sidebar-header">
 				<button class="sidebar-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +34,7 @@
 						<img src="../assets/logo/Logo Icon.svg" alt="">
 					</div>
 					<div class="sidebar-brand-label">
-						<span>Seravee</span>
+						<h3>Seravee</h3>
 					</div>
 				</div>
 				<div class="sidebar-search">
@@ -44,7 +46,7 @@
 						</svg>
 					</div>
 					<input type="text" class="sidebar-search-input" placeholder=" Type to search...">
-				</div>
+				</div>				
 			</div>
 			<div class="sidebar-body">
 				<ul class="sidebar-body-wrap">
@@ -82,34 +84,8 @@
 							<li class="">
 								<a href="./components-button.html">Buttons</a>
 							</li>
-							<li class="">
-								<a href="./components-card.html">Cards</a>
-							</li>
 						</ul>
-					</li>
-					<li>
-						<div class="sidebar-nav-collapse ">
-							<div class="collapse-items">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-										d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-								</svg>
-								<span>Utilities</span>
-							</div>
-							<button class="collapse-toggle">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-									<path fill-rule="evenodd"
-										d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-										clip-rule="evenodd" />
-								</svg>
-							</button>
-						</div>
-						<ul class="sidebar-nav-sub ">
-							<li class="">
-								<a href="./utilities-color.html">Colors</a>
-							</li>
-						</ul>
-					</li>
+					</li>					
 					<li>
 						<div class="sidebar-nav ">
 							<a href="./form.html" class="nav-items">
@@ -181,31 +157,17 @@
 			<div class="sidebar-footer">
 				<ul class="sidebar-footer-wrap">
 					<li>
-						<a href="javascript:void(0);" class="footer-list">
+						<a href="./profile.html" class="footer-list ">
 							<div class="list-profile">
 								<div class="list-profile-img">
 									<img src="../assets/faces/5.jpg" alt="Pic">
 								</div>
-								<span class="list-profile-label">Safira Permata</span>
+								<span class="list-profile-label">Permata Safira	</span>
 							</div>
 						</a>
-					</li>
+					</li>					
 					<li>
-						<a href="javascript:void(0);" class="footer-list">
-							<div class="list-notif">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-								</svg>
-								<span>Message</span>
-							</div>
-							<div class="list-label-green">
-								<span>5</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" class="footer-list">
+						<a href="./notification.html" class="footer-list ">
 							<div class="list-notif">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -214,7 +176,21 @@
 								<span>Notifications</span>
 							</div>
 							<div class="list-label-yellow">
-								<span>5</span>
+								<span>3</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./message.html" class="footer-list ">
+							<div class="list-notif">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+								<span>Message</span>
+							</div>
+							<div class="list-label-green">
+								<span>1</span>
 							</div>
 						</a>
 					</li>
@@ -232,6 +208,7 @@
 				</ul>
 			</div>
 		</div>
+	</div>
     <div class="container">
       <nav class="navigation">
 				<div class="navigation-wrap">
@@ -240,7 +217,7 @@
 							<div>
 								<img src="../assets/logo/Logo Icon.svg" alt="">
 							</div>
-							<span>Seravee</span>
+							<h3>Seravee</h3>
 						</div>
 						<button class="navigation-toggle">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -252,7 +229,7 @@
 			</nav>
       <section class="section">
         <header class="section-header">
-					<h1 class="header-title">Alerts</h1>
+					<h2 class="header-title">Alerts</h2>
 					<div class="breadcrumb">
 						<a href="javascript:void(0);">Dashboard</a>
 						
@@ -262,54 +239,106 @@
 				</header> 
         <div class="section-body">
           
-          <div class="card">
-            <div class="card-title">
+          <div class="content">
+            <div class="content-title">
               <h3>Alert Default</h3>
             </div>
-            <div class="card-desc">
+            <div class="content-desc">
               <p>
-                This is default alert, to use this component you just 
-                need to add <code class="code">.alert</code> class as alert foundation and add 
-                <code class="code">.alert-{color}</code> class to give color to alert.
-                e.g <code class="code">class="alert alert-primary"</code>.
+                Untuk menggunakan komponen Alert cukup mudah, anda hanya perlu menggunakan kelas <code>.alert .alert-[warna]</code> . contoh: <code>class=“alert alert-primary”</code>.
               </p>
             </div>
-            <div class="card-contens">
+            <div class="content-body-1">
               <div class="alert alert-primary">
                 <p>This is primary alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>              
               </div>
               <div class="alert alert-secondary">
                 <p>This is secondary alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
-              <div class="alert alert-tertiary">
-                <p>This is tertiary alert.. </p>
+              <div class="alert alert-alternates">
+                <p>This is alternates alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
-              <div class="alert alert-danger">
-                <p>This is danger alert.. </p>
+              <div class="alert alert-dark">
+                <p>This is dark alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
+              </div>
+              <div class="alert alert-light">
+                <p>This is light alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
+              </div>
+              <div class="alert alert-error">
+                <p>This is error alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
               <div class="alert alert-success">
                 <p>This is success alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
               <div class="alert alert-warning">
                 <p>This is warning alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
               <div class="alert alert-info">
                 <p>This is info alert.. </p>
+                <button id="close-alert">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button> 
               </div>
             </div>
           </div>
 
         </div>
         <footer class="section-footer">
-					<p>Seravee © 2022 <br> Designed & Developed By. <span>Muhammad Ridwan Eryansah</span></p>
+					<p>Seravee © 2022 <br> Designed & Developed By. <a href="#">Muhammad Ridwan Eryansah</a></p>
 				</footer>
       </section>
     </div>
     <!-- javascript -->
     <!-- core -->
     <!-- for development -->
-    <script src="/dist/js/core.js"></script>
+    <!-- <script src="/dist/js/core.js"></script> -->
+    <script src="../js/core.js"></script>
+    
     <!-- for production -->
-    <script src="../js/core.min.js"></script>
+    <!-- <script src="../js/core.min.js"></script> -->
+    
+    
   </body>
 </html>

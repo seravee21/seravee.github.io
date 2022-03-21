@@ -12,55 +12,91 @@
 
     <!-- Core -->
     <!-- for development -->
-    <link rel="stylesheet" href="/dist/css/core.css" /> 
+    <!-- <link rel="stylesheet" href="/dist/css/core.css" />  -->
+    <link rel="stylesheet" href="../css/core.css" />
     <!-- for production -->
-    <link rel="stylesheet" href="../css/core.min.css" />
+    <!-- <link rel="stylesheet" href="../css/core.min.css" /> -->
   </head>
-  <body class="wrap-auth">
-    <div class="auth">
-      <div class="auth-icon">
-        <img src="../assets/illustrations/register.svg" alt="">
-      </div>
-      <div class="auth-form">
-        <div class="form-inside">
-          <div class="form-outside">
-            <h2>Welcome</h2>
-            <p>Create new account</p>   
-            
-            <form action="#" class="input">
-              <div class="input-wrap-col">
-                <div class="input-item">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Name">
+  <body class="auth">
+        <div class="auth-content">
+          <h2>Welcome to Seravee</h2>
+          <p>Create new account</p>   
+          
+            <form action="#" class="form">
+              <div class="form-wrap-col">
+                <div class="input">               
+                  <div class="input-wrap-left">
+                    <label class="input-icon-left" for="name">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                      </svg>
+                    </label>
+                    <input type="text" id="name" placeholder="Name">
+                  </div>  
                 </div>
-                <div class="input-item">
-                  <label for="username">Username</label>
-                  <input type="text" id="username" placeholder="Username">
+                <div class="input">            
+                  <div class="input-wrap-left">
+                    <label class="input-icon-left" for="username">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                      </svg>
+                    </label>                    
+                    <input type="text" id="username" placeholder="Username">
+                  </div>  
                 </div>
-                <div class="input-item">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Email">
+                <div class="input">             
+                  <div class="input-wrap-left">
+                    <label class="input-icon-left" for="email">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                    </label>
+                    <input type="email" id="email" placeholder="Email">
+                  </div>  
                 </div>
-                <div class="input-item">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" placeholder="Password">
+                <div class="input">
+                  <div class="input-wrap-all">
+                    <label class="input-icon-left" for="password">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                      </svg>
+                    </label>
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="input-icon-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>                    
+                </div>
+                <div class="input">
+                  <div class="input-wrap-all">
+                    <label class="input-icon-left" for="passwordConfirm">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                      </svg>
+                    </label>
+                    <input type="password" id="passwordConfirm" placeholder="Password Confirm">
+                    <span class="input-icon-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>                    
                 </div>
               </div>
-              <div class="input-submit">
-                <button class="btn btn-primary" type="submit">Register</button>
-                <button class="btn btn-outline-secondary">Login</button>                
+              <div class="form-submit-auth">
+                <button class="btn btn-normal btn-primary" type="submit">Sign Up</button>
+                <button class="btn btn-normal btn-secondary">Sign In</button>                
               </div>
             </form>              
           
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- javascript -->
-    <!-- core -->
-    <!-- for development -->
-    <script src="/dist/js/core.js"></script>
-    <!-- for production -->
-    <script src="../js/core.min.js"></script>
+    
+            <script src="../js/validations.js"></script>
+
   </body>
 </html>

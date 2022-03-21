@@ -12,15 +12,17 @@
 
     <!-- Core -->
     <!-- for development -->
-    <link rel="stylesheet" href="/dist/css/core.css" /> 
+    <!-- <link rel="stylesheet" href="/dist/css/core.css" />  -->
+    <link rel="stylesheet" href="../css/core.css" />
     <!-- for production -->
-    <link rel="stylesheet" href="../css/core.min.css" />
+    <!-- <link rel="stylesheet" href="../css/core.min.css" /> -->
   </head>
   <body>
     <!-- blur -->
     <!-- <div id="blur"></div> -->
     <!-- end blur -->
     <div class="sidebar" id="sidebar">
+		<div class="sidebar-wrap" id="sidebar-wrap">
 			<div class="sidebar-header">
 				<button class="sidebar-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +34,7 @@
 						<img src="../assets/logo/Logo Icon.svg" alt="">
 					</div>
 					<div class="sidebar-brand-label">
-						<span>Seravee</span>
+						<h3>Seravee</h3>
 					</div>
 				</div>
 				<div class="sidebar-search">
@@ -44,7 +46,7 @@
 						</svg>
 					</div>
 					<input type="text" class="sidebar-search-input" placeholder=" Type to search...">
-				</div>
+				</div>				
 			</div>
 			<div class="sidebar-body">
 				<ul class="sidebar-body-wrap">
@@ -82,34 +84,8 @@
 							<li class="">
 								<a href="./components-button.html">Buttons</a>
 							</li>
-							<li class="">
-								<a href="./components-card.html">Cards</a>
-							</li>
 						</ul>
-					</li>
-					<li>
-						<div class="sidebar-nav-collapse ">
-							<div class="collapse-items">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-										d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-								</svg>
-								<span>Utilities</span>
-							</div>
-							<button class="collapse-toggle">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-									<path fill-rule="evenodd"
-										d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-										clip-rule="evenodd" />
-								</svg>
-							</button>
-						</div>
-						<ul class="sidebar-nav-sub ">
-							<li class="">
-								<a href="./utilities-color.html">Colors</a>
-							</li>
-						</ul>
-					</li>
+					</li>					
 					<li>
 						<div class="sidebar-nav  active ">
 							<a href="./form.html" class="nav-items">
@@ -181,31 +157,17 @@
 			<div class="sidebar-footer">
 				<ul class="sidebar-footer-wrap">
 					<li>
-						<a href="javascript:void(0);" class="footer-list">
+						<a href="./profile.html" class="footer-list ">
 							<div class="list-profile">
 								<div class="list-profile-img">
 									<img src="../assets/faces/5.jpg" alt="Pic">
 								</div>
-								<span class="list-profile-label">Safira Permata</span>
+								<span class="list-profile-label">Permata Safira	</span>
 							</div>
 						</a>
-					</li>
+					</li>					
 					<li>
-						<a href="javascript:void(0);" class="footer-list">
-							<div class="list-notif">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-								</svg>
-								<span>Message</span>
-							</div>
-							<div class="list-label-green">
-								<span>5</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" class="footer-list">
+						<a href="./notification.html" class="footer-list ">
 							<div class="list-notif">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -214,7 +176,21 @@
 								<span>Notifications</span>
 							</div>
 							<div class="list-label-yellow">
-								<span>5</span>
+								<span>3</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./message.html" class="footer-list ">
+							<div class="list-notif">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+								<span>Message</span>
+							</div>
+							<div class="list-label-green">
+								<span>1</span>
 							</div>
 						</a>
 					</li>
@@ -232,6 +208,7 @@
 				</ul>
 			</div>
 		</div>
+	</div>
     <div class="container">
       <nav class="navigation">
 				<div class="navigation-wrap">
@@ -240,7 +217,7 @@
 							<div>
 								<img src="../assets/logo/Logo Icon.svg" alt="">
 							</div>
-							<span>Seravee</span>
+							<h3>Seravee</h3>
 						</div>
 						<button class="navigation-toggle">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -252,7 +229,7 @@
 			</nav>
       <section class="section">
         <header class="section-header">
-					<h1 class="header-title">Form</h1>
+					<h2 class="header-title">Form</h2>
 					<div class="breadcrumb">
 						<a href="javascript:void(0);">Dashboard</a>
 						
@@ -262,38 +239,82 @@
 				</header> 
         <div class="section-body">
           
-          <div class="card">
-            <div class="card-title">
+          <div class="content">
+            <div class="content-title">
               <h3>Form</h3>
             </div>
-            <div class="card-desc">
+            <div class="content-desc">
               <p>
-                this is a form, you can use it by copying from the html file available in <code class="code">pages/form.html</code>.
+                Untuk membuat sebuah form, pertama anda harus membungkusnya dengan kelas <code>.form</code> di tag <code>Form</code> sebagai contoh: <code>class=”form"</code>,
+                kemudian didalam tag form anda membungkusnya lagi dengan tag <code>DIV</code> dengan kelas <code>.form-wrap-row</code>. kemudian sebelum anda meletakan element <code>input</code> dan <code>lebel</code>
+                anda diharuskan untuk membuka tag <code>DIV</code> sebagai pembungkusnya dengan kelas <code>.input</code> sebagai contoh: <code>class="input"</code>, untuk lebih lengkapnya
+                anda bisa melihat kodenya langsung yang berada di folder <code>pages/form.html</code>.
               </p>
             </div>
-            <div class="card-contens">
-              <form action="#" class="input">
-                <div class="input-wrap-row">
-                  <div class="input-item">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name">
+            <div class="content-body-1">
+              <form action="#" class="form">
+                <div class="form-wrap-row">
+                  <div class="input">       
+                    <label for="username">Username</label>     
+                    <div class="input-wrap-left">
+                      <label class="input-icon-left" for="username">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                        </svg>
+                      </label>                    
+                      <input type="text" id="username" placeholder="Username">
+                    </div>  
                   </div>
-                  <div class="input-item">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Username">
-                  </div>
-                  <div class="input-item">
-                    <label for="email">Email</label>
+                  <div class="input">           
+                  <label for="email">Email</label>    
+                  <div class="input-wrap-left">
+                    <label class="input-icon-left" for="email">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                    </label>
                     <input type="email" id="email" placeholder="Email">
-                  </div>
-                  <div class="input-item">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password">
-                  </div>
+                  </div>  
                 </div>
-                <div class="input-submit">
-                  <button class="btn btn-senary">Cancel</button>
-                  <button class="btn btn-primary" type="submit">Save</button>
+                <div class="input">
+                  <label for="password">Password</label>  
+                  <div class="input-wrap-all">
+                    <label class="input-icon-left" for="password">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                      </svg>
+                    </label>
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="input-icon-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>                    
+                </div>
+                <div class="input">
+                  <label for="passwordConfirm">Password Confirm</label>  
+                  <div class="input-wrap-all">
+                    <label class="input-icon-left" for="passwordConfirm">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                      </svg>
+                    </label>
+                    <input type="password" id="passwordConfirm" placeholder="Password Confirm">
+                    <span class="input-icon-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>                    
+                </div>
+                </div>
+                <div class="form-submit">
+                  <button class="btn btn-normal btn-light">Cancel</button>
+                  <button class="btn btn-normal btn-primary" type="submit">Save</button>
                 </div>
               </form>          
             </div>
@@ -301,15 +322,20 @@
 
         </div>
         <footer class="section-footer">
-					<p>Seravee © 2022 <br> Designed & Developed By. <span>Muhammad Ridwan Eryansah</span></p>
+					<p>Seravee © 2022 <br> Designed & Developed By. <a href="#">Muhammad Ridwan Eryansah</a></p>
 				</footer>
       </section>
     </div>
     <!-- javascript -->
     <!-- core -->
     <!-- for development -->
-    <script src="/dist/js/core.js"></script>
+    <!-- <script src="/dist/js/core.js"></script> -->
+    <script src="../js/core.js"></script>
+    
     <!-- for production -->
-    <script src="../js/core.min.js"></script>
+    <!-- <script src="../js/core.min.js"></script> -->
+    
+          <script src="../js/validations.js"></script>
+
   </body>
 </html>
